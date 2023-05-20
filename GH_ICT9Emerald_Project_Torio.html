@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Millimeter Converter</title>
+	<style>
+		body {
+			background-image: url(https://media.istockphoto.com/id/1371713933/vector/orange-abstract-gradient-background.jpg?s=612x612&w=0&k=20&c=enmoaErWq_m_2VreK_MG1ttDBmax1sTcCzw5rJCyvjE=);
+			background-size: 100%;
+		}
+		span {
+			background-color: #FBBF77;
+		}
+	</style>
+</head>
+<body>
+	<center><br>
+		<h3>Millimeter Converter</h3>
+		<p>Convert a <i>millimeter</i> value into <i>centimeters, meters,</i> and <i>kilometers.</i></p><br><hr><br><br><br>
+		<i><b>Millimeters to Centimeters:</b></i><br>
+		<input type="number" oninput="MillCent (this.value)" onchange="MillCent (this.value)"><br><br>
+		<i>Centimeter Value: </i>
+		<span id="Cent"></span><span> Centimeter/s</span><br><br><br><br>
+		<i><b>Millimeters to Meters:</b></i><br>
+		<input type="number" oninput="MillMet (this.value)" onchange="MillMet (this.value)"><br><br>
+		<i>Meter Value: </i>
+		<span id="Met"></span><span> Meter/s</span><br><br><br><br>
+		<i><b>Millimeters to Kilometer:</b></i><br>
+		<input type="number" oninput="MillKilo (this.value)" onchange="MillKilo (this.value)"><br><br>
+		<i>Kilometer Value: </i>
+		<span id="Kilo"></span><span> Kilometer/s</span>
+	<script>
+		function myFunction() {
+			var num1 = document.getElementById('seconds').value;
+			}
+		function MillCent(getValue) {
+			document.getElementById('Cent').innerHTML=getValue/10;
+			}
+		function MillMet(getValue) {
+			document.getElementById('Met').innerHTML=getValue/1000;
+			}
+		function MillKilo(getValue) {
+			document.getElementById('Kilo').innerHTML=getValue/1000000;
+			}
+	</script>
+	</center>
+</body>
+</html>
